@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.0.15">
   <diagram name="Página-1" id="g_hNOTaEF8afQXLXZntR">
-    <mxGraphModel dx="712" dy="421" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1112" dy="421" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -17,7 +17,46 @@
           <mxGeometry x="224" y="716" width="120" height="32" as="geometry" />
         </mxCell>
         <mxCell id="umAVoETO8ea7qzDbTgLn-11" value="Empleado" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="38" y="982" width="200" height="200" as="geometry" />
+          <mxGeometry x="-61" y="981" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="umAVoETO8ea7qzDbTgLn-13" value="Id&lt;div&gt;Nombre&lt;/div&gt;&lt;div&gt;DocumentIdent&lt;/div&gt;&lt;div&gt;FechaIngreso&lt;/div&gt;&lt;div&gt;FechaCumpleaños&lt;/div&gt;&lt;div&gt;Salario&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="umAVoETO8ea7qzDbTgLn-11">
+          <mxGeometry x="27" y="40" width="152" height="127" as="geometry" />
+        </mxCell>
+        <mxCell id="umAVoETO8ea7qzDbTgLn-16" value="Obra" style="swimlane;whiteSpace=wrap;html=1;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="193" y="981" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="umAVoETO8ea7qzDbTgLn-17" value="Id&lt;div&gt;FechaIncio&lt;/div&gt;&lt;div&gt;FechaFinal&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="umAVoETO8ea7qzDbTgLn-16">
+          <mxGeometry x="55" y="69" width="97" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="umAVoETO8ea7qzDbTgLn-18" value="Tarea" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="423" y="981" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="umAVoETO8ea7qzDbTgLn-19" value="Id&lt;div&gt;Descripcion&lt;/div&gt;&lt;div&gt;TiempoDuración&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="umAVoETO8ea7qzDbTgLn-18">
+          <mxGeometry x="36" y="69" width="135" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="umAVoETO8ea7qzDbTgLn-20" value="Recurso" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-61" y="1252" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="umAVoETO8ea7qzDbTgLn-21" value="Id&lt;div&gt;Nombre&lt;/div&gt;&lt;div&gt;Valor&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="umAVoETO8ea7qzDbTgLn-20">
+          <mxGeometry x="66" y="69" width="75" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="umAVoETO8ea7qzDbTgLn-22" value="AsignaciónTarea" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="199" y="1254" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="umAVoETO8ea7qzDbTgLn-23" value="Id&lt;br&gt;&lt;div&gt;Empleado_ID&lt;/div&gt;&lt;div&gt;Tarea_ID&lt;/div&gt;&lt;div&gt;HorasHombre&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="umAVoETO8ea7qzDbTgLn-22">
+          <mxGeometry x="45" y="60" width="118" height="89" as="geometry" />
+        </mxCell>
+        <mxCell id="umAVoETO8ea7qzDbTgLn-24" value="TareaObra" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="439" y="1249" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="umAVoETO8ea7qzDbTgLn-25" value="Id&lt;div&gt;Tarea_ID&lt;/div&gt;&lt;div&gt;Obra_ID&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="umAVoETO8ea7qzDbTgLn-24">
+          <mxGeometry x="62" y="69" width="83" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="umAVoETO8ea7qzDbTgLn-26" value="RecursoTarea" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="710" y="1225" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="umAVoETO8ea7qzDbTgLn-27" value="Id&lt;div&gt;Recurso_ID&lt;/div&gt;&lt;div&gt;Tarea_ID&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="umAVoETO8ea7qzDbTgLn-26">
+          <mxGeometry x="53" y="69" width="102" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
