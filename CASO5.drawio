@@ -1,9 +1,39 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.0.16">
   <diagram name="Página-1" id="_I6uab1jy10L5X4GfNsR">
-    <mxGraphModel>
+    <mxGraphModel dx="516" dy="1420" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="NNKL1YSeR9x9C77XLFQb-1" value="Medicamento" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="312" y="-11" width="160" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="NNKL1YSeR9x9C77XLFQb-2" value="&lt;b&gt;PK&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;ID&lt;/b&gt;&lt;div&gt;&lt;b&gt;FK&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;ID_Laboratorio&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Nombre&lt;/div&gt;&lt;div&gt;Tipo&lt;/div&gt;&lt;div&gt;Stock&lt;/div&gt;&lt;div&gt;UnidadesVendidas&lt;/div&gt;&lt;div&gt;precio&lt;/div&gt;&lt;div&gt;RequiereReceta&lt;/div&gt;&lt;div&gt;LineaLaboratorio&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="NNKL1YSeR9x9C77XLFQb-1">
+          <mxGeometry x="9" y="30" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="NNKL1YSeR9x9C77XLFQb-3" value="Venta" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="588" width="170" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="NNKL1YSeR9x9C77XLFQb-4" value="&lt;b&gt;PK&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;ID&lt;/b&gt;&lt;div&gt;&lt;b&gt;FK&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;ID_Medicamento&lt;/b&gt;&lt;/div&gt;&lt;div&gt;FechaVenta&lt;/div&gt;&lt;div&gt;Cantidad&lt;/div&gt;&lt;div&gt;PrecioTotal&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="NNKL1YSeR9x9C77XLFQb-3">
+          <mxGeometry x="10" y="31" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="NNKL1YSeR9x9C77XLFQb-5" value="Laboratorio" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="70" y="40" width="110" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="NNKL1YSeR9x9C77XLFQb-6" value="&lt;b&gt;PK&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;ID&lt;/b&gt;&lt;div&gt;Nombre&lt;/div&gt;&lt;div&gt;Direccion&lt;/div&gt;&lt;div&gt;Telefono&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="NNKL1YSeR9x9C77XLFQb-5">
+          <mxGeometry x="18" y="25" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="NNKL1YSeR9x9C77XLFQb-9" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToMany;endFill=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#fff2cc;strokeColor=#d6b656;" edge="1" parent="NNKL1YSeR9x9C77XLFQb-5" source="NNKL1YSeR9x9C77XLFQb-5">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-17" y="-56.42135623730951" as="sourcePoint" />
+            <mxPoint x="240" y="30" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NNKL1YSeR9x9C77XLFQb-10" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToMany;endFill=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#fff2cc;strokeColor=#d6b656;" edge="1" parent="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="472" y="82" as="sourcePoint" />
+            <mxPoint x="588" y="65" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
