@@ -1,9 +1,64 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.0.16">
   <diagram name="Página-1" id="o6pAdawF6bKoE41HRRKl">
-    <mxGraphModel>
+    <mxGraphModel dx="743" dy="1901" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="XZ8uVXnFnG7fecz09Hol-1" value="Estudiante" style="swimlane;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#5D7F99;strokeColor=#D0CEE2;fontColor=#1A1A1A;" vertex="1" parent="1">
+          <mxGeometry x="40" y="120" width="160" height="137" as="geometry">
+            <mxRectangle x="45" y="100" width="100" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XZ8uVXnFnG7fecz09Hol-8" value="&lt;b&gt;PK&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Documento&lt;/b&gt;&lt;div&gt;&lt;b&gt;FK&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;CodigoPrograma&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Nombre&lt;/div&gt;&lt;div&gt;Semestre&lt;/div&gt;&lt;div&gt;Sexo&lt;/div&gt;&lt;div&gt;Direccion&lt;/div&gt;&lt;div&gt;Celular&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;labelBackgroundColor=none;fontColor=#1A1A1A;" vertex="1" parent="XZ8uVXnFnG7fecz09Hol-1">
+          <mxGeometry x="5" y="23" width="150" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="XZ8uVXnFnG7fecz09Hol-3" value="Competencia" style="swimlane;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#5D7F99;strokeColor=#D0CEE2;fontColor=#1A1A1A;" vertex="1" parent="1">
+          <mxGeometry x="470" y="-50" width="110" height="70" as="geometry">
+            <mxRectangle x="100" y="180" width="110" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XZ8uVXnFnG7fecz09Hol-7" value="&lt;b&gt;PK&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Codigo&lt;/b&gt;&lt;div&gt;Nombre&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;labelBackgroundColor=none;fontColor=#1A1A1A;" vertex="1" parent="XZ8uVXnFnG7fecz09Hol-3">
+          <mxGeometry x="2" y="24" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XZ8uVXnFnG7fecz09Hol-4" value="Profesor" style="swimlane;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#5D7F99;strokeColor=#D0CEE2;fontColor=#1A1A1A;" vertex="1" parent="1">
+          <mxGeometry x="476" y="129" width="120" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="XZ8uVXnFnG7fecz09Hol-6" value="&lt;b&gt;PK&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Documento&lt;/b&gt;&lt;div&gt;Nombre&lt;/div&gt;&lt;div&gt;Direccion&lt;/div&gt;&lt;div&gt;Telefono&lt;/div&gt;&lt;div&gt;Jornada&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;labelBackgroundColor=none;fontColor=#1A1A1A;" vertex="1" parent="XZ8uVXnFnG7fecz09Hol-4">
+          <mxGeometry y="23" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="XZ8uVXnFnG7fecz09Hol-10" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="250" y="-60" width="110" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="XZ8uVXnFnG7fecz09Hol-2" value="Programa" style="swimlane;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#5D7F99;strokeColor=#D0CEE2;fontColor=#1A1A1A;" vertex="1" parent="XZ8uVXnFnG7fecz09Hol-10">
+          <mxGeometry width="110" height="90" as="geometry">
+            <mxRectangle x="-10" y="90" width="90" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XZ8uVXnFnG7fecz09Hol-9" value="&lt;b&gt;PK&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;Codigo&lt;/b&gt;&lt;div&gt;Nombre&lt;/div&gt;&lt;div&gt;Duracion&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;labelBackgroundColor=none;fontColor=#1A1A1A;" vertex="1" parent="XZ8uVXnFnG7fecz09Hol-10">
+          <mxGeometry x="10" y="28" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XZ8uVXnFnG7fecz09Hol-11" value="" style="edgeStyle=orthogonalEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;strokeColor=#736CA8;fontColor=#1A1A1A;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="250.06" y="-10.000000000000227" as="sourcePoint" />
+            <mxPoint x="120.06" y="120" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="250.06" y="-14" />
+              <mxPoint x="120.06" y="-14" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XZ8uVXnFnG7fecz09Hol-12" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;strokeColor=#736CA8;fontColor=#1A1A1A;" edge="1" parent="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="360" y="-10" as="sourcePoint" />
+            <mxPoint x="470" y="-10" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XZ8uVXnFnG7fecz09Hol-13" value="" style="fontSize=12;html=1;endArrow=ERzeroToMany;endFill=1;rounded=0;strokeColor=#736CA8;fontColor=#1A1A1A;" edge="1" parent="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="530" y="20" as="sourcePoint" />
+            <mxPoint x="530" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
