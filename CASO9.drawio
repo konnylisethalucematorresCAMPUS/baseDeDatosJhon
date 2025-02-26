@@ -1,9 +1,66 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.0.16">
   <diagram name="Página-1" id="q0JxU8ujddhiVZk8PMOj">
-    <mxGraphModel>
+    <mxGraphModel dx="1314" dy="619" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="TwNNo_80yUvEnZkuU8MJ-1" value="Usuario" style="swimlane;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#FFE45E;strokeColor=#FF6392;fontColor=#5AA9E6;" vertex="1" parent="1">
+          <mxGeometry x="-450" y="167" width="194" height="159" as="geometry" />
+        </mxCell>
+        <mxCell id="TwNNo_80yUvEnZkuU8MJ-2" value="&lt;b&gt;PK&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;ID_Usuario&lt;/b&gt;&lt;div&gt;Correo&lt;/div&gt;&lt;div&gt;Contraseña&lt;/div&gt;&lt;div&gt;TokenDeRecuperacion&lt;/div&gt;&lt;div&gt;FechaRegistro&lt;/div&gt;&lt;div&gt;UltimaModificacion&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;labelBackgroundColor=none;fontColor=#5AA9E6;" vertex="1" parent="TwNNo_80yUvEnZkuU8MJ-1">
+          <mxGeometry x="7" y="27" width="180" height="127" as="geometry" />
+        </mxCell>
+        <mxCell id="TwNNo_80yUvEnZkuU8MJ-4" value="UsuarioRol" style="swimlane;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#FFE45E;strokeColor=#FF6392;fontColor=#5AA9E6;" vertex="1" parent="1">
+          <mxGeometry x="-274" y="439" width="166" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="TwNNo_80yUvEnZkuU8MJ-6" value="&lt;b&gt;PK&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;ID_Usuario&lt;/b&gt;&lt;div&gt;&lt;b&gt;FK&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;ID_Rol&lt;/b&gt;&lt;/div&gt;&lt;div&gt;FechaDeAsignacion&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;labelBackgroundColor=none;fontColor=#5AA9E6;" vertex="1" parent="TwNNo_80yUvEnZkuU8MJ-4">
+          <mxGeometry x="3" y="26" width="161" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="TwNNo_80yUvEnZkuU8MJ-7" value="Rol" style="swimlane;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#FFE45E;strokeColor=#FF6392;fontColor=#5AA9E6;" vertex="1" parent="1">
+          <mxGeometry x="-8" y="263" width="153" height="133" as="geometry" />
+        </mxCell>
+        <mxCell id="TwNNo_80yUvEnZkuU8MJ-8" value="&lt;b&gt;PK&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;ID&lt;/b&gt;&lt;div&gt;Nombre&lt;/div&gt;&lt;div&gt;Descripcion&lt;/div&gt;&lt;div&gt;FechaDeRegistro&lt;/div&gt;&lt;div&gt;UltimaModificacion&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;labelBackgroundColor=none;fontColor=#5AA9E6;" vertex="1" parent="TwNNo_80yUvEnZkuU8MJ-7">
+          <mxGeometry y="25" width="152" height="108" as="geometry" />
+        </mxCell>
+        <mxCell id="TwNNo_80yUvEnZkuU8MJ-19" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;strokeColor=#FF6392;fontColor=#5AA9E6;startSize=8;endSize=8;curved=1;fillColor=#FFE45E;entryX=-0.018;entryY=0.306;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="TwNNo_80yUvEnZkuU8MJ-7" target="TwNNo_80yUvEnZkuU8MJ-12">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="78" y="134" as="sourcePoint" />
+            <mxPoint x="178" y="34" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TwNNo_80yUvEnZkuU8MJ-11" value="RolPermiso" style="swimlane;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#FFE45E;strokeColor=#FF6392;fontColor=#5AA9E6;" vertex="1" parent="1">
+          <mxGeometry x="170" y="526" width="149" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="TwNNo_80yUvEnZkuU8MJ-12" value="&lt;b&gt;FK&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;ID_Rol&lt;/b&gt;&lt;div&gt;&lt;b&gt;FK&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;ID_Permiso&lt;/b&gt;&lt;/div&gt;&lt;div&gt;FechaAsignacion&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;labelBackgroundColor=none;fontColor=#5AA9E6;" vertex="1" parent="TwNNo_80yUvEnZkuU8MJ-11">
+          <mxGeometry y="23" width="142" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="TwNNo_80yUvEnZkuU8MJ-15" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="374" y="281" width="158" height="133" as="geometry" />
+        </mxCell>
+        <mxCell id="TwNNo_80yUvEnZkuU8MJ-13" value="Permiso" style="swimlane;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#FFE45E;strokeColor=#FF6392;fontColor=#5AA9E6;" vertex="1" parent="TwNNo_80yUvEnZkuU8MJ-15">
+          <mxGeometry width="158" height="133" as="geometry" />
+        </mxCell>
+        <mxCell id="TwNNo_80yUvEnZkuU8MJ-14" value="&lt;b&gt;PK&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;ID_Permiso&lt;/b&gt;&lt;div&gt;Nombre&lt;/div&gt;&lt;div&gt;Descripcion&lt;/div&gt;&lt;div&gt;FechaDeRegistro&lt;/div&gt;&lt;div&gt;UltimaModificacion&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;labelBackgroundColor=none;fontColor=#5AA9E6;" vertex="1" parent="TwNNo_80yUvEnZkuU8MJ-15">
+          <mxGeometry x="2.5" y="23.5" width="152" height="108" as="geometry" />
+        </mxCell>
+        <mxCell id="TwNNo_80yUvEnZkuU8MJ-17" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;strokeColor=#FF6392;fontColor=#5AA9E6;startSize=8;endSize=8;curved=1;fillColor=#FFE45E;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="TwNNo_80yUvEnZkuU8MJ-1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-375" y="585" as="sourcePoint" />
+            <mxPoint x="-275" y="485" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TwNNo_80yUvEnZkuU8MJ-18" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;strokeColor=#FF6392;fontColor=#5AA9E6;startSize=8;endSize=8;curved=1;fillColor=#FFE45E;exitX=-0.025;exitY=0.489;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="TwNNo_80yUvEnZkuU8MJ-8" target="TwNNo_80yUvEnZkuU8MJ-6">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="-91" y="468" as="sourcePoint" />
+            <mxPoint x="9" y="368" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TwNNo_80yUvEnZkuU8MJ-20" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;rounded=0;strokeColor=#FF6392;fontColor=#5AA9E6;startSize=8;endSize=8;curved=1;fillColor=#FFE45E;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.026;exitY=0.371;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="TwNNo_80yUvEnZkuU8MJ-14" target="TwNNo_80yUvEnZkuU8MJ-11">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="245" y="623" as="sourcePoint" />
+            <mxPoint x="345" y="523" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
